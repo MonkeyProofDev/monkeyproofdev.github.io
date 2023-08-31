@@ -24,6 +24,16 @@ const socialImageURL = new URL(
   ogImage ? ogImage : SITE.ogImage,
   Astro.url.origin
 ).href;
+
+function getRandomItemFromArray(array: string[]): string | null {
+  if (array.length === 0) {
+    return null; // Return null if the array is empty
+  }
+
+  const randomIndex: number = Math.floor(Math.random() * array.length);
+  return array[randomIndex];
+}
+
 ---
 
 <!DOCTYPE html>
@@ -36,7 +46,7 @@ const socialImageURL = new URL(
     <meta name="generator" content={Astro.generator} />
 
     <!-- General Meta Tags -->
-    <title>>_{title}</title>
+    <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
     <meta name="author" content={author} />
