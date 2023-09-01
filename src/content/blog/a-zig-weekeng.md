@@ -11,8 +11,7 @@ tags:
 ogImage: ""
 description:
   Hey there, fellow tech enthusiasts! Buckle up for a wild ride as I take you through my weekend escapade with Zig, the programming language that left me feeling zippy and zesty! 🚀
-postImage: /assets/blog/zig-logo.svg
-
+postImage: /assets/blog/zig.pnga
 ---
 ## Table of contents
 
